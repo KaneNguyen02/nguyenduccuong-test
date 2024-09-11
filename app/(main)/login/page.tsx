@@ -1,3 +1,5 @@
+"use client";
+import Link from "next/link";
 import React from "react";
 
 const LoginPage: React.FC = () => {
@@ -50,11 +52,13 @@ const LoginPage: React.FC = () => {
                   Forgot Password?
                 </a>
               </div>
-              <button
-                type="submit"
-                className="w-full   bg-[#B6F09C]  py-2 rounded-lg transition-colors">
-                Log in
-              </button>
+              <Link href={"/dashboard"}>
+                <button
+                  type="submit"
+                  className="w-full   bg-[#B6F09C]  py-2 rounded-lg transition-colors">
+                  Log in
+                </button>
+              </Link>
             </form>
             <p className="text-center text-gray-400 mt-6">
               Don&apos;t have an account?{" "}
